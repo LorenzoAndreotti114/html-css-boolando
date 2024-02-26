@@ -63,7 +63,6 @@ li {
 .Main-Container {
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
     min-height: 900px;
     margin-left: 5%;
     margin-right: 5%;
@@ -77,7 +76,6 @@ li {
 }
 
 .Col-Items {
-    background-color: rgb(255, 116, 225);
     position: relative;
     min-height: 400px;
     position: relative;
@@ -93,6 +91,7 @@ li {
     left: 10px;
     bottom: 30%;
     background-color: red;
+    z-index: 10;
 }
 
 .Sostenibility {
@@ -101,10 +100,34 @@ li {
     left: 55px;
     background-color: greenyellow;
     font-size: 1em;
+    z-index: 10;
+}
+
+.Sostenibility-Alone {
+    position: absolute;
+    bottom: 30%;
+    left: 10px;
+    background-color: greenyellow;
+    font-size: 1em;
+    z-index: 10;
+}
+
+.Heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    height: 30px;
+    width: 50px;
+    padding: 5px;
+    z-index: 10;
 }
 
 .Col-Items > * {
- padding: 2px;
+    padding: 2px;
 }
 
 .New-Price {
@@ -117,3 +140,15 @@ li {
     text-decoration: line-through;
 
 }
+
+.Img-Changer:hover .Img-Back {
+    z-index: 2;
+}
+
+.Img-Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+

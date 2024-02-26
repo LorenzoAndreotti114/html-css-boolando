@@ -59,3 +59,61 @@ li {
 }
 
 /* MAIN */
+
+.Main-Container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    min-height: 900px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Col {
+    width: calc(100%/3);
+    padding: 10px;
+}
+
+.Col-Items {
+    background-color: rgb(255, 116, 225);
+    position: relative;
+    min-height: 400px;
+    position: relative;
+}
+
+.Col-Items > img {
+    max-width: 100%;
+}
+
+.Discount {
+    display: flex;
+    position: absolute;
+    left: 10px;
+    bottom: 30%;
+    background-color: red;
+}
+
+.Sostenibility {
+    position: absolute;
+    bottom: 30%;
+    left: 55px;
+    background-color: greenyellow;
+    font-size: 1em;
+}
+
+.Col-Items > * {
+ padding: 2px;
+}
+
+.New-Price {
+    display: inline-block;
+    color: red;
+}
+
+.Old-Price {
+    color: black;
+    text-decoration: line-through;
+
+}

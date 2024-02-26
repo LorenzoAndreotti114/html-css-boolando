@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    background-color: orange;
+    min-height: 70px;
+}
+
+.Header-Container {
+    min-height: 70px;
+    width: auto;
+    margin: auto 15%;
+    justify-content: space-between;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Header-Links {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+.Logo-Boolean {
+
+    max-height: 40px;
+}
+
+.Container-Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    margin: 5px;
+}
+
+/* MAIN */

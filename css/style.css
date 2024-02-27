@@ -7,14 +7,14 @@
 /* HEADER */
 
 header {
-    background-color: orange;
+    background-color: rgb(255, 102, 0);
     min-height: 70px;
 }
 
 .Header-Container {
     min-height: 70px;
     width: auto;
-    margin: auto 15%;
+    margin: auto 5%;
     justify-content: space-between;
 }
 
@@ -35,6 +35,7 @@ a {
 li {
     list-style-type: none;
     padding: 5px;
+    padding-left: 0;
 
 }
 
@@ -64,10 +65,14 @@ li {
     display: flex;
     flex-wrap: wrap;
     min-height: 900px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 15px;
 }
 
 .Col {
@@ -78,39 +83,36 @@ li {
 .Col-Items {
     position: relative;
     min-height: 400px;
-    position: relative;
 }
 
 .Col-Items > img {
     max-width: 100%;
 }
 
-.Discount {
+.Disability {
     display: flex;
     position: absolute;
-    left: 10px;
-    bottom: 30%;
-    background-color: red;
+    bottom: 25%;
+    color: white;
+}
+
+.Discount {
+    margin-right:3px;
+    background-color: rgb(255 0 0);
     z-index: 10;
+    font-size: 1.2vw;
+    padding: 0.3vw 1vw;
 }
 
 .Sostenibility {
-    position: absolute;
-    bottom: 30%;
-    left: 55px;
-    background-color: greenyellow;
-    font-size: 1em;
+    display: flex;
+    background-color: rgb(0 128 0);
+    font-size: 1.2vw;
     z-index: 10;
+    padding: 0.3vw 1vw;
+    align-items: center;
 }
 
-.Sostenibility-Alone {
-    position: absolute;
-    bottom: 30%;
-    left: 10px;
-    background-color: greenyellow;
-    font-size: 1em;
-    z-index: 10;
-}
 
 .Heart {
     display: flex;
@@ -130,19 +132,33 @@ li {
     padding: 2px;
 }
 
+.Mark {
+    font-size: 1.2vw;
+}
+
+.Clotes-Title {
+    font-size: 1.2vw;
+}
+
 .New-Price {
     display: inline-block;
     color: red;
+    font-size: 1.2vw;
 }
 
 .Old-Price {
     color: black;
     text-decoration: line-through;
+    font-size: 1.1vw;
 
 }
 
 .Img-Changer:hover .Img-Back {
     z-index: 2;
+}
+
+.Img-Changer:hover .Heart {
+    color: red;
 }
 
 .Img-Back {
@@ -152,3 +168,44 @@ li {
     z-index: -1;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: rgb(0, 0, 0);
+    min-height: 70px;
+    color: white;
+    padding: 10px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.Footer-Container {
+    min-height: 70px;
+    width: auto;
+    margin: auto 5%;
+    align-items: center;
+}
+
+.Footer-Container ul {
+    display: flex;
+}
+
+.Footer-Links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Socials div {
+    display: inline-block;
+}
+
+footer li {
+    padding-right:15px ;
+}
